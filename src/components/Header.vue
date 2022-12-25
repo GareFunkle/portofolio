@@ -1,7 +1,13 @@
 <template>
     <header class="header">
-        <a href="">A propos de moi</a>
-        <a href="">Mon parcours</a>
+        <router-link to="/#about">
+            <p>A propos de moi</p>
+        </router-link>
+
+        <router-link to="/#myjourney">
+            <p>Mon parcours</p>
+
+        </router-link>
         <div class="header__logo-wrap">
             <img class="img" src="../assets/logo.svg" alt="">
             <div class="header__title">
@@ -11,10 +17,14 @@
                 </div>
             </div>
         </div>
-        <a href="">Mes realisations</a>
-        <a href="">Contactez-Moi !</a>
-
+        <router-link to="#production">
+            <p href="">Mes realisations</p>
+        </router-link>
+        <router-link to="#contact">
+            <p>Contactez-Moi !</p>
+        </router-link>
     </header>
+
 </template>
 
 <script>
@@ -43,6 +53,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+
         .img {
             width: 15rem;
         }
