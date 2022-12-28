@@ -12,4 +12,11 @@ export default {
 
 <style lang="scss">
 
+.contact__page {
+    height: 87.65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 </style>

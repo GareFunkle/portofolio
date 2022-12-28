@@ -1,9 +1,14 @@
 <template>
     <div id="about" class="about__page">
+        <img class="about__bg" src="../assets/bgsection2.svg" alt="">
         <div class="about__wrap-img">
             <img class="about__profil-img" src="../assets/mokup.svg" alt="">
             <div class="test">
                 <p>Bonjour !</p>
+            </div>
+            <div class="about__wrap-profil">
+                <img class="about__img-avatar" src="../assets/pngegg.png" alt="">
+                <p class="name">Vincent Durret</p>
             </div>
         </div>
         <img class="about__img" src="../assets/test.svg" alt="">
@@ -43,6 +48,13 @@ export default {
 .about__page {
     box-sizing: border-box;
     height: 100vh;
+
+    .about__bg {
+        position: absolute;
+        z-index: -1;
+        top: 113.3vh;
+        left: -1rem;
+    }
 
     .about__wrap-img {
 
@@ -93,17 +105,11 @@ export default {
                     opacity: 1;
                 }
 
-                // 50% {
-                //     background: black;
-                //     top: 40.5vh;
-                //     left: 30%;
-                //     opacity: 0.5;
-                // }
 
                 100% {
                     background: black;
                     top: 31.5vh;
-                    left: 29.5%;
+                    left: 29%;
                     opacity: 0;
                 }
             }
@@ -112,6 +118,23 @@ export default {
                 color: white;
                 font-weight: bold;
             }
+        }
+
+        .about__wrap-profil {
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 0;
+            top: -13rem;
+            left: 34.5rem;
+            .about__img-avatar {
+                position: relative;
+                width: 5rem;
+                margin-right: 15px;
+
+            }
+
+
         }
     }
 

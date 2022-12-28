@@ -1,7 +1,7 @@
 
 <template>
   <div class="page">
-    <img class="page__bg" src="./assets/bg1.svg" alt="">
+    <img class="page__bg" src="./assets/bgsection1.svg" alt="">
     <div class="page__wrap">
       <Header class="page__headers" />
       <About />
@@ -47,6 +47,9 @@ export default {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
 }
+h1 {
+  color: var(--h1-color);
+}
 
 .page {
 
@@ -55,27 +58,27 @@ export default {
     z-index: -1;
     top: -1rem;
     left: -1rem;
-    animation: fade 1s ease-in-out;
+    // animation: fade 1s ease-in-out;
 
-    @keyframes fade {
-      0% {
-        opacity: 0;
-        transition: 0.3s;
-      }
+    // @keyframes fade {
+    //   0% {
+    //     opacity: 0;
+    //     transition: 0.3s;
+    //   }
 
-      50% {
-        opacity: 0.5;
-        transition: 0.3s;
+    //   50% {
+    //     opacity: 0.5;
+    //     transition: 0.3s;
 
-      }
+    //   }
 
-      100% {
-        opacity: 1;
-        transition: 0.3s;
+    //   100% {
+    //     opacity: 1;
+    //     transition: 0.3s;
 
-      }
+    //   }
 
-    }
+    // }
   }
 
   .page__wrap {
