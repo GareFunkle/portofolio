@@ -7,7 +7,7 @@
                 <p>Bonjour !</p>
             </div>
             <div class="about__wrap-profil">
-                <img class="about__img-avatar" src="../assets/pngegg.png" alt="">
+                <img class="about__img-avatar" src="../assets/avatar.jpg" alt="">
                 <p class="name">Vincent Durret</p>
             </div>
         </div>
@@ -46,7 +46,6 @@ export default {
 
 <style lang="scss">
 .about__page {
-    box-sizing: border-box;
     height: 100vh;
 
     .about__bg {
@@ -58,28 +57,12 @@ export default {
 
     .about__wrap-img {
 
-        // transform: rotateY(45deg) skewY(20deg);
-        animation: rotation 3s;
-
-
-        @keyframes rotation {
-            0% {
-                transform: rotateY(20deg) skewY(10deg);
-            }
-
-            100% {
-                transform: rotateY(0deg) skewY(0deg);
-            }
-        }
-
-
-
         .about__profil-img {
             position: relative;
             z-index: 2;
             left: 27%;
             top: 30vh;
-            width: 20rem;
+            width: 30rem;
         }
 
         .test {
@@ -87,29 +70,24 @@ export default {
             display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 0;
+            z-index: 1;
             top: 52.5vh;
-            left: 30.5%;
-            width: 15.5rem;
-            height: 33.7rem;
-            border-radius: 30px;
+            left: 30.7%;
+            width: 23.1rem;
+            height: 50.3rem;
+            border-radius: 41px;
             animation: start 3s ease-in-out;
             filter: drop-shadow(1px 1px 40px var(--h1-color));
-            // background: #000;
 
             @keyframes start {
                 0% {
                     background: black;
-                    top: 29vh;
-                    left: 31%;
                     opacity: 1;
                 }
 
 
                 100% {
                     background: black;
-                    top: 31.5vh;
-                    left: 29%;
                     opacity: 0;
                 }
             }
@@ -122,16 +100,24 @@ export default {
 
         .about__wrap-profil {
             display: flex;
-            align-items: center;
+            justify-content: center;
             position: relative;
             z-index: 0;
-            top: -13rem;
-            left: 34.5rem;
             .about__img-avatar {
                 position: relative;
                 width: 5rem;
+                height: 5rem;
                 margin-right: 15px;
+                left: -16.5rem;
+                top: -13rem;
+                border-radius: 50%;
 
+            }
+
+            .name {
+                position: relative;
+                top: -11.5rem;
+                left: -16rem;
             }
 
 
